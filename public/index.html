@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="height=device-height, 
+  width=device-width, initial-scale=1.0, 
+  minimum-scale=1.0, maximum-scale=1.0, 
+  user-scalable=no, target-densitydpi=device-dpi" />
+  <title>Hello Web Components</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto+Mono%3A400%2C100%2C300italic%2C300%2C100italic%2C400italic%2C500%2C500italic%2C700%2C700italic%7CRoboto%3A100%2C100italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext"
+    type="text/css" media="all" />
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .navbar-brand>.navbar-item {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar-menu .navbar-item {
+      font-size: 14px;
+      transition: background-color 0.26s, color 0.26s;
+    }
+
+    .navbar-menu .navbar-item.active {
+      background-color: #222;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="header">
+      <div class="nav">
+        <div class="brand">
+          <a href="#">
+            GK
+          </a>
+        </div>
+        <div class="menu" id="navbar">
+          <a class="menu-item navbar-item active" href="#home">Home</a>
+          <a class="menu-item navbar-item" href="#about">About</a>
+          <a class="menu-item navbar-item" href="#resume">Resume</a>
+          <a class="menu-item navbar-item" href="#portfolio">Portfolio</a>
+          <a class="menu-item navbar-item" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper" id="fullpage">
+      <section id="home" class="page intro">
+        <div class="container">
+          <div class="content">
+            <div class="intro-heading">
+              <h1 class="h-title ">
+                Hello, I’m <span id="name">George Kando</span>, a Web-Developer based in Austin,
+                TX. I have rich experience in web site and mobile app development.
+              </h1>
+            </div>
+            <!-- <div class="placeholder-scroll">
+            </div>
+            <div id="wrap"> 
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 802.354 3245.896">
+                <defs>
+                <path id="Path_440" d="M 452.43306,42.304075 C 247.84573,313.58841 -6.6709878,221.65529 14.009913,570.86292 c 8.572268,144.74714 18.436271,274.66086 50.59179,298.55591 74.424407,55.30543 93.493257,121.39025 349.269367,107.67231 247.02808,-13.24876 386.49455,185.45676 368.41411,417.99536 -12.04052,262.4994 -10.42639,427.2446 -536.42525,328.364 -121.98331,-26.7703 -229.94567,52.7756 -222.210998,292.8052 4.578419,142.0818 -8.637715,282.0454 44.41404,319.8364 147.589688,105.1342 412.171778,18.7361 644.318648,148.3813 168.87195,94.3086 70.39697,436.4554 -141.77853,447.712" fill="none"/>
+                </defs>
+                <use xlink:href="#Path_440" stroke="#01a8e2" stroke-width="1" stroke-dasharray="8"/>
+                <use id="theFill" xlink:href="#Path_440" stroke="red" stroke-width="2"/>
+              </svg>
+            </div> -->
+          </div>
+      </section>
+      <section id="about" class="page about">
+        <div class="container">
+          <div class="content">
+            <div>
+              <div class="title">About</div>
+            </div>
+            <div class="subsection bio">
+              <p>
+                Hello! I’m George Kando, a web designer from Austin, TX. 
+                <br />
+                <br />
+                What I find most interesting about software engineering is striking the balance between being 
+                bold and ambitious, while also ensuring the end product is snappy, lightweight, and intuitive for users.
+                <br />
+                <br />
+                My unquenchable thirtst to learn more about software development began back in the days of 
+                BASIC and VB, and have continued on to React, Python, and whatever else catches my interest. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resume" class="page resume">
+        <div class="container">
+          <div class="content">
+            <div class="cols">
+              <div class="col">
+                <div>
+                  <div class="title">Experience</div>
+                </div>
+                <div class="resume-items">
+                  <div class="resume-item active">
+                    <div class="date">2017 - 2018</div>
+                    <div class="name">Senior Financial Analyst - Nielsen Bainbridge Group</div>
+                    <div class="single-post-text">
+                      <p>Served as data driven analyst for multiple business units.</p>
+                      <p>Assisted developing financial consolidation platform.</p>
+                    </div>
+                  </div>
+                  <div class="resume-item active">
+                    <div class="date">2015 - 2017</div>
+                    <div class="name">Finance & Operations Consultant - Voyant Analytics</div>
+                    <div class="single-post-text">
+                      <p>Consultant for SAAS start-up specializing in educational
+                        analytics.</p>
+                      <p>Convinced engineering team to let me mess around in
+                        dev to learn MongoDB and Scala.</p>
+                    </div>
+                  </div>
+                  <div class="resume-item active">
+                    <div class="date">2009 - 2010</div>
+                    <div class="name">Senior Financial Analyst - Golfsmith International</div>
+                    <div class="single-post-text">
+                      <p>Optimize your website and apps performance using latest technology.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <div class="title">Education</div>
+                </div>
+                <div class="resume-items">
+                  <div class="resume-item active">
+                    <div class="date">2019 - 2020</div>
+                    <div class="name">Lambda School, San Francisco - CA</div>
+                    <div class="single-post-text">
+                      <p>Full Stack Software Engineering</p>
+                      <p>Computer Science & Software Engineering Academy
+                        providing an immersive hands-on curriculum with a focus on computer science, & full stack
+                        development for 9+ months.</p>
+                    </div>
+                  </div>
+                  <div class="resume-item active">
+                    <div class="date">2007 - 2011</div>
+                    <div class="name">Univ. Delaware Law School - Wilmington, DE</div>
+                    <div class="single-post-text">
+                      <p>Juris Doctorate</p>
+                    </div>
+                  </div>
+                  <div class="resume-item active">
+                    <div class="date">2003 - 2007</div>
+                    <div class="name">Chestnut Hill College - Philadelphia, PA</div>
+                    <div class="single-post-text">
+                      <p>BA - Political Science</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="subsection skills">
+              <div class="title">Skills</div>
+              <div class="cols skills-container">
+                <div class="col skill-category">
+                  <div>
+                    <div class="title">Front End</div>
+                  </div>
+                  <div class="monitor-container">
+                    <div class="monitor">
+                      <div class="skill">
+                        <img class="skill-icon" src="img/javascript.svg" alt="JS logo">
+                        <span class="skill-name">Javascript</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" src="img/react.svg" alt="JS logo">
+                        <span class="skill-name">React</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" src="img/redux.svg" alt="JS logo">
+                        <span class="skill-name">Redux</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" src="img/lodash.svg" alt="JS logo">
+                        <span class="skill-name">Lodash</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" src="img/typescript.svg" alt="JS logo">
+                        <span class="skill-name">Typescript</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" src="img/sass.svg" alt="JS logo">
+                        <span class="skill-name">SASS</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" id="electron" src="img/electron.svg" alt="JS logo">
+                        <span class="skill-name">Electron</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" src="img/material-ui.svg" alt="JS logo">
+                        <span class="skill-name">Material UI</span>
+                      </div>
+                      <div class="skill">
+                        <img class="skill-icon" src="img/bootstrap.svg" alt="JS logo">
+                        <span class="skill-name">Bootstrap</span>
+                      </div>
+                    </div>
+                    <div class="stand"></div>
+                  </div>
+                </div>
+                <div class="col skill-category">
+                  <div>
+                    <div class="title">Back End</div>
+                  </div>
+                  <div class="terminalContainer">
+                    <div class="terminalWindow">
+                      <div class="terminalMenu">
+                        <div class="terminalButtons terminalClose"></div>
+                        <div class="terminalButtons terminalMinimize"></div>
+                        <div class="terminalButtons terminalZoom"></div>
+                      </div>
+                      <div class="terminalScreen">
+                        <p class="line1">
+                          <span class="prompt">~$ </span>cat backend-skills.txt</p>
+                        <div class="be-skills">
+                          <div class="be-skill">
+                            <img class="be-skill-icon" src="img/nodejs.svg">
+                            <span class="be-skill-name">Node.js</span>
+                          </div>
+                          <div class="be-skill">
+                            <img class="be-skill-icon" src="img/python.svg">
+                            <span class="be-skill-name">Python</span>
+                          </div>
+                          <div class="be-skill">
+                            <img class="be-skill-icon" src="img/realm.svg">
+                            <span class="be-skill-name">Realm</span>
+                          </div>
+                          <div class="be-skill">
+                            <img class="be-skill-icon" src="img/firebase.svg">
+                            <span class="be-skill-name">Firebase</span>
+                          </div>
+                          <div class="be-skill">
+                            <img class="be-skill-icon" src="img/jest.svg">
+                            <span class="be-skill-name">Jest</span>
+                          </div>
+                          <div class="be-skill">
+                            <img class="be-skill-icon" src="img/mxpanel.svg">
+                            <span class="be-skill-name">MixPanel</span>
+                          </div>
+                          <div class="be-skill">
+                            <img class="be-skill-icon" src="img/graphql.svg">
+                            <span class="be-skill-name">Graphql</span>
+                          </div>
+                        </div>
+                        <div class="terminal-line">
+                          <span class="prompt">~$  </span>
+                          <div class="cursor"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subsection interests">
+                <div class="title">Interests</div>
+                <div class="interest-items">
+                  <div class="interest-item">
+                    <div class="interet-title">
+                      <div class="icon"><img src="img/hockey-sticks.svg" /></div>
+                      <div class="name">Ice Hockey</div>
+                    </div>
+                    <p>Playing ice hockey my whole life has equipped me not only with the skills to be a good team player but also to deal with the wins and losses in life by helping me realize my teammates, friends, and family will always be there.</p>
+                  </div>
+                  <div class="interest-item">
+                    <div class="interet-title">
+                      <div class="icon"><img src="img/hammer-wrench.svg" /></div>
+                      <div class="name">Home Improvement</div>
+                    </div>
+                    <p>Two bathroom renovations under my belt, thanks to countless hours watching Youtube.  Home DIY projects, like programming and web design, require an ambitious but pragmatic vision, perseverance, and knowing when you need to ask for help.</p>
+                  </div>
+                  <div class="interest-item">
+                    <div class="interet-title">
+                      <div class="icon"><img src="img/hand-heart.svg" /></div>
+                      <div class="name">Volunteer</div>
+                    </div>
+                    <p>Volunteering in my community and at church has been a mainstay of my life.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="portfolio" class="page portfolio">
+        <div class="container">
+          <div class="content">
+            <div>
+              <div class="title">Portfolio</div>
+            </div>
+            <div class="portfolio-items">
+              <div class="portfolio-item">
+                <div class="portfolio-preview" style="background-image:url('img/future-hope-school-282.png')">
+                  <!-- <img class="portfolio-img thumbnail" src="img/future-hope-school-282.png"> -->
+                </div>
+                <div class="description">
+                  <div class="portfolio-category title">
+                    Web
+                  </div>
+                  <a href="https://www.futurehopeschool.com">Future Hope School</a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-preview" style="background-image:url('img/minnas-screenshot-282x406.png')">
+                  <!-- <img class="portfolio-img thumbnail resize-thumb" src="img/minnas-screenshot-282x406.png"> -->
+                </div>
+                <div class="description">
+                  <div class="portfolio-category title">
+                    Web
+                  </div>
+                  <a href="#">Minnas - Reminder App</a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-preview" style="background-image:url('img/minnas-mobile-screenshot.jpg')">
+                  <!-- <img class="portfolio-img thumbnail resize-thumb" src="img/minnas-mobile-screenshot.jpg"> -->
+                </div>
+                <div class="description">
+                  <div class="portfolio-category title">
+                    Mobile
+                  </div>
+                  <a href="#">Minnas - Reminder App</a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-preview" style="background-image:url('img/CatTracker-screenshot-282x406.png')">
+                  <!-- <img class="portfolio-img thumbnail resize-thumb" src="img/CatTracker-screenshot-282x406.png"> -->
+                </div>
+                <div class="description">
+                  <div class="portfolio-category title">
+                    Mobile
+                  </div>
+                  <a href="#">Cat Tracker</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="page contact">
+        <div class="container">
+          <div class="content">
+            <div>
+              <div class="title">Contact</div>
+            </div>
+            <div class="info-list">
+              <div class="info-list-item"><strong>Residence:</strong> <span>USA</span></div>
+              <div class="info-list-item"><strong>Freelance:</strong><span>Available</span> </div>
+              <div class="info-list-item"><strong>Phone:</strong><span> +1 512 709 0470</span></div>
+              <div class="info-list-item"><strong>E-mail:</strong> gkando@gmail.com</div>
+              <div class="info-list-item"><strong>Address:</strong> <span>12424 Thompkins Dr <br /> Austin, TX 78753</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="social">
+          <a target="_blank" href="https://www.linkedin.com/in/george-kando/"><img src="img/linkedin-box.svg" /></a>
+          <a target="_blank" href="https://www.github.com/gkando"><img src="img/github-circle.svg" /></a>
+        </div>
+      </footer>
+      <div class="line top"></div>
+      <div class="line bottom"></div>
+      <div class="line left"></div>
+      <div class="line right"></div>
+    </div>
+  </div>
+  </div>
+  <script src="index_bundle.js"></script>
+  <script src="vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+  <script>
+    const navbar = document.querySelector('#navbar');
+    const scrollspy = new VanillaScrollspy(navbar);
+    scrollspy.init();
+
+    // window.onscroll = function () { scrollFunction() };
+    // window.addEventListener('scroll', function() {
+    //   let l = Path_440.getTotalLength();
+    //   let dasharray = l;
+    //   let dashoffset = l;
+    //   e = document.documentElement;
+    //   theFill.setAttributeNS(null, "stroke-dasharray", l);
+    //   theFill.setAttributeNS(null, "stroke-dashoffset", l);
+    //   dashoffset = l - window.scrollY * l / (e.scrollHeight - e.clientHeight);
+    //   theFill.setAttributeNS(null, "stroke-dashoffset", dashoffset);
+    // })
+    // function scrollFunction() {
+    //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //     //600 e.setAttribute('y', 40)
+    //     var clip = document.documentElement.scrollTop / 5
+    //     var newY = 216.9 * (clip / 100)
+    //     document.querySelector(".scroll-arrow").style.cssText = `clip-path:inset(${clip}% 0% 0% 0%);`;
+    //     document.querySelector("#svgTxt").setAttribute('y', newY);
+    //   } else {
+    //     document.querySelector(".scroll-arrow").style.cssText = "clip-path:inset(0% 0% 0% 0%);";
+    //     document.querySelector("#svgTxt").setAttribute('y', 15);
+    //   }
+    // }
+  </script>
+</body>
+
+</html>
