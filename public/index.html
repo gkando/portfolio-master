@@ -93,6 +93,7 @@
                 BASIC and VB, and have continued on to React, Python, and whatever else catches my interest. 
               </p>
             </div>
+            <a class="resume-button"> Download CV </a>
           </div>
         </div>
       </section>
@@ -296,7 +297,6 @@
             </div>
           </div>
       </section>
-
       <section id="portfolio" class="page portfolio">
         <div class="container">
           <div class="content">
@@ -305,18 +305,23 @@
             </div>
             <div class="portfolio-items">
               <div class="portfolio-item">
-                <div class="portfolio-preview" style="background-image:url('img/future-hope-school-282.png')">
+                <div class="portfolio-preview" data-src="img/future-hope-school.png" style="background-image:url('img/future-hope-school-282.png')">
                   <!-- <img class="portfolio-img thumbnail" src="img/future-hope-school-282.png"> -->
                 </div>
                 <div class="description">
                   <div class="portfolio-category title">
                     Web
                   </div>
-                  <a href="https://www.futurehopeschool.com">Future Hope School</a>
+                  <div class="portfolio-links">
+                    <a class="linkFx" href="https://www.futurehopeschool.com">Future Hope School</a>
+                    <a href="https://github.com/Lambda-School-Labs/future-hope-fe">
+                      <img style="padding-left: 9px;" src="img/github-circle.svg" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="portfolio-item">
-                <div class="portfolio-preview" style="background-image:url('img/minnas-screenshot-282x406.png')">
+                <div class="portfolio-preview" data-src="img/minnas-screenshot.png" style="background-image:url('img/minnas-screenshot-282x406.png')">
                   <!-- <img class="portfolio-img thumbnail resize-thumb" src="img/minnas-screenshot-282x406.png"> -->
                 </div>
                 <div class="description">
@@ -327,18 +332,23 @@
                 </div>
               </div>
               <div class="portfolio-item">
-                <div class="portfolio-preview" style="background-image:url('img/minnas-mobile-screenshot.jpg')">
+                <div class="portfolio-preview" data-src="img/minnas-mobile-screenshot.jpg" style="background-image:url('img/minnas-mobile-screenshot.jpg')">
                   <!-- <img class="portfolio-img thumbnail resize-thumb" src="img/minnas-mobile-screenshot.jpg"> -->
                 </div>
                 <div class="description">
                   <div class="portfolio-category title">
                     Mobile
                   </div>
-                  <a href="#">Minnas - Reminder App</a>
+                  <div class="portfolio-links">
+                    <a class="linkFx" href="https://github.com/gkando/minnas-reminder-app-mobile">Minnas - Reminder App</a>
+                    <a href="https://github.com/gkando/minnas-reminder-app-mobile">
+                      <img style="padding-left: 9px;" src="img/github-circle.svg" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="portfolio-item">
-                <div class="portfolio-preview" style="background-image:url('img/CatTracker-screenshot-282x406.png')">
+                <div class="portfolio-preview" data-src="img/CatTracker-screenshot.jpg" style="background-image:url('img/CatTracker-screenshot-282x406.png')">
                   <!-- <img class="portfolio-img thumbnail resize-thumb" src="img/CatTracker-screenshot-282x406.png"> -->
                 </div>
                 <div class="description">
@@ -348,6 +358,7 @@
                   <a href="#">Cat Tracker</a>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
@@ -381,8 +392,8 @@
     </div>
   </div>
   </div>
-  <script src="index_bundle.js"></script>
   <script src="vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+  <!-- <script src="basicLightbox/basicLightbox.min.js"></script> -->
   <script>
     const navbar = document.querySelector('#navbar');
     const scrollspy = new VanillaScrollspy(navbar);

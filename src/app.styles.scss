@@ -339,10 +339,14 @@ a {
         }
       }
     }
-    
+  }
+}
 
-    
-
+.portfolio-links{
+  display: flex;
+  align-items: center;
+  .linkFx {
+    font-size: 15px;
   }
 }
 
@@ -498,6 +502,17 @@ svg:hover {
   margin-top: 1.5vh;
 }
 
+.resume-button {
+  background-color: $blue;
+  display:inline-block;
+  padding:22px 56px;
+  text-decoration:none;
+  cursor:pointer;
+	color:#ffffff;
+  margin-top: 11px;
+  margin-right: auto;
+  font-size: 14px;
+}
 
 .terminalWindow {
   margin: auto;
