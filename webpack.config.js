@@ -58,6 +58,7 @@ module.exports = env => {
         { from: 'node_modules/vanillajs-scrollspy/dist', to: 'vanillajs-scrollspy' },
         { from: 'node_modules/basiclightbox/dist', to: 'basiclightbox' },
         { from: 'src/img', to: 'img' },
+        { from: 'src/doc', to: 'doc' },
       ]),
       new HtmlWebpackPlugin({
         inject: 'body',
